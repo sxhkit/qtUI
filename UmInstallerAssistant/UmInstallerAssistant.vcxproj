@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_CORE_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_WEBCHANNEL_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\modules;$(ProjectDir)\include;$(ProjectDir)\modules\check_devices;$(ProjectDir)\common_libs;$(ProjectDir)\modules\script_interact;$(ProjectDir)\modules\ui_signal;$(ProjectDir)\modules\package_data_manager;$(ProjectDir)\apps;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtWebChannel;$(QTDIR)\include\QtWidgets;.\modules\zeus;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWebEngineWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>qtmaind.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Sqld.lib;Qt5WebChanneld.lib;Qt5Widgetsd.lib;Qt5Networkd.lib;Qt5WebEngineWidgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>UNICODE;WIN32;WIN64;QT_DLL;QT_NO_DEBUG;NDEBUG;QT_CORE_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_WEBCHANNEL_LIB;QT_WIDGETS_LIB;QT_NETWORK_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(ProjectDir)\modules;$(ProjectDir)\include;$(ProjectDir)\modules\check_devices;$(ProjectDir)\common_libs;$(ProjectDir)\modules\script_interact;$(ProjectDir)\modules\ui_signal;$(ProjectDir)\modules\package_data_manager;$(ProjectDir)\apps;.\GeneratedFiles;.;$(QTDIR)\include;.\GeneratedFiles\$(ConfigurationName);$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtSql;$(QTDIR)\include\QtWebChannel;$(QTDIR)\include\QtWidgets;.\modules\zeus;$(QTDIR)\include\QtNetwork;$(QTDIR)\include\QtWebEngineWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <AdditionalLibraryDirectories>$(QTDIR)\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>qtmain.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Sql.lib;Qt5WebChannel.lib;Qt5Widgets.lib;Qt5Network.lib;Qt5WebEngineWidgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="apps\BatchListItem.cpp" />
+    <ClCompile Include="apps\BatchListWidget.cpp" />
+    <ClCompile Include="apps\BatchPageView.cpp" />
+    <ClCompile Include="apps\CustomWnd.cpp" />
+    <ClCompile Include="apps\ListWidget.cpp" />
+    <ClCompile Include="apps\main.cpp" />
+    <ClCompile Include="apps\MoblieItem.cpp" />
+    <ClCompile Include="apps\OneKeyListWidget.cpp" />
+    <ClCompile Include="apps\OnekeyPageView.cpp" />
+    <ClCompile Include="apps\PackageStateManager.cpp" />
+    <ClCompile Include="apps\QucikInstallListWidget.cpp" />
+    <ClCompile Include="apps\QueryInfoView.cpp" />
+    <ClCompile Include="apps\QuickInstallView.cpp" />
+    <ClCompile Include="apps\TaskWndDialog.cpp" />
+    <ClCompile Include="apps\UMessageBox.cpp" />
+    <ClCompile Include="apps\UmInstallerAssistant.cpp" />
+    <ClCompile Include="common_libs\EventDriver.cpp" />
+    <ClCompile Include="common_libs\Ipc.cpp" />
+    <ClCompile Include="GeneratedFiles\Debug\moc_AdbMan.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BatchListItem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BatchListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_BatchPageView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CheckDevices.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConnectManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CustomWnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_EventDriver.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_GlobalConfiguration.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_Ipc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_LocalStorage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_MoblieItem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_OneKeyListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_OnekeyPageView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PackageStateManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_PushfileMan.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QucikInstallListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QueryInfoView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_QuickInstallView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_SignalManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TaskWndDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UMessageBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UmInstallerAssistant.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_UmInstallerAssistant.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_AdbMan.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BatchListItem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BatchListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_BatchPageView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CheckDevices.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ConnectManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CustomWnd.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_EventDriver.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_GlobalConfiguration.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_Ipc.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_LocalStorage.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_MoblieItem.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_OneKeyListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_OnekeyPageView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PackageStateManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_PushfileMan.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QucikInstallListWidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QueryInfoView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_QuickInstallView.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_SignalManager.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TaskWndDialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UMessageBox.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UmInstallerAssistant.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="include\Common.cpp" />
+    <ClCompile Include="modules\adb_man\AdbMan.cpp" />
+    <ClCompile Include="modules\check_devices\CheckDevices.cpp" />
+    <ClCompile Include="modules\check_devices\ConnectManager.cpp" />
+    <ClCompile Include="modules\configuration_option\GlobalConfiguration.cpp" />
+    <ClCompile Include="modules\local_storage\LocalStorage.cpp" />
+    <ClCompile Include="modules\package_data_manager\DataManager.cpp" />
+    <ClCompile Include="modules\pushfile_man\PushfileMan.cpp" />
+    <ClCompile Include="modules\ui_signal\SignalManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\UmInstallerAssistant.qrc">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(FullPath);.\apps\Resources\image\Batch-phone-gray.png;.\apps\Resources\image\shadow.png;.\apps\Resources\image\Batch-btn-hover.png;.\apps\Resources\image\Batch-btn-normal.png;.\apps\Resources\image\Batch-btn-selected.png;.\apps\Resources\image\onekey-btn-hover.png;.\apps\Resources\image\onekey-btn-normal.png;.\apps\Resources\image\onekey-btn-selected.png;.\apps\Resources\image\quick_install_option.png;.\apps\Resources\image\quick_install_option_hover.png;.\apps\Resources\image\quick_install_option_selected.png;.\apps\Resources\image\logo.png;.\apps\Resources\image\close-btn-hover.png;.\apps\Resources\image\close-btn-normal.png;.\apps\Resources\image\close-btn-pressed.png;.\apps\Resources\image\mini-btn-hover.png;.\apps\Resources\image\mini-btn-normal.png;.\apps\Resources\image\mini-btn-pressed.png;.\apps\Resources\image\help_icon.png;.\apps\Resources\image\help_gap_line.png;.\apps\Resources\image\Batch-phone-green.png;.\apps\Resources\image\Batch-phone-red.png;.\apps\Resources\image\installbtn-hover.png;.\apps\Resources\image\installbtn-normal.png;.\apps\Resources\image\installbtn-press.png;.\apps\Resources\image\task_center_btn.png;.\apps\Resources\image\task_center_btn_hover_icon.png;.\apps\Resources\image\installing.png;.\apps\Resources\image\batch_list_item_hover.png;.\apps\Resources\image\batch_list_item_normal.png;.\apps\Resources\image\batch_list_item_selected.png;.\apps\Resources\image\onekey_listtiem_query_ck.png;.\apps\Resources\image\onekey_listitem_hover.png;.\apps\Resources\image\onekey_listitem_normal.png;.\apps\Resources\image\onekey_listitem_selected.png;.\apps\Resources\image\onekey_listitem_install_btn_hover.png;.\apps\Resources\image\onekey_listitem_install_btn_normal.png;.\apps\Resources\image\list_item_high_convertion.png;.\apps\Resources\image\list_item_high_download.png;.\apps\Resources\image\onekey_listitem_delete_hover.png;.\apps\Resources\image\onekey_listitem_delete_normal.png;.\apps\Resources\image\query_item_type.png;.\apps\Resources\image\query_item_icon.png;.\apps\Resources\image\task_bg_img.png;.\apps\Resources\image\task_center_close.png;.\apps\Resources\image\task_center_close_hover.png;.\apps\Resources\image\task_line_vline_bk.png;.\apps\Resources\image\task_download.png;.\apps\Resources\image\task_failed.png;.\apps\Resources\image\task_install_movie.gif;.\apps\Resources\image\task_installing.png;.\apps\Resources\image\task_item_icon.png;.\apps\Resources\image\task_item_retry_hover.png;.\apps\Resources\image\task_item_retry_normal.png;.\apps\Resources\image\task_waitting.png;.\apps\Resources\qss\BatchListItem.qss;.\apps\Resources\qss\BatchPage.qss;.\apps\Resources\qss\Mainframe.qss;.\apps\Resources\qss\MoblieItem.qss;.\apps\Resources\qss\OneKeyPage.qss;.\apps\Resources\qss\OneKeyListItem.qss;.\apps\Resources\qss\OneKeyListItemButton_s.qss;.\apps\Resources\qss\QueryItem.qss;.\apps\Resources\qss\TaskCenterWnd.qss;.\apps\Resources\qss\TaskListItem.qss;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(FullPath);.\apps\Resources\image\Batch-phone-gray.png;.\apps\Resources\image\shadow.png;.\apps\Resources\image\Batch-btn-hover.png;.\apps\Resources\image\Batch-btn-normal.png;.\apps\Resources\image\Batch-btn-selected.png;.\apps\Resources\image\onekey-btn-hover.png;.\apps\Resources\image\onekey-btn-normal.png;.\apps\Resources\image\onekey-btn-selected.png;.\apps\Resources\image\quick_install_option.png;.\apps\Resources\image\quick_install_option_hover.png;.\apps\Resources\image\quick_install_option_selected.png;.\apps\Resources\image\logo.png;.\apps\Resources\image\close-btn-hover.png;.\apps\Resources\image\close-btn-normal.png;.\apps\Resources\image\close-btn-pressed.png;.\apps\Resources\image\mini-btn-hover.png;.\apps\Resources\image\mini-btn-normal.png;.\apps\Resources\image\mini-btn-pressed.png;.\apps\Resources\image\help_icon.png;.\apps\Resources\image\help_gap_line.png;.\apps\Resources\image\Batch-phone-green.png;.\apps\Resources\image\Batch-phone-red.png;.\apps\Resources\image\installbtn-hover.png;.\apps\Resources\image\installbtn-normal.png;.\apps\Resources\image\installbtn-press.png;.\apps\Resources\image\task_center_btn.png;.\apps\Resources\image\task_center_btn_hover_icon.png;.\apps\Resources\image\installing.png;.\apps\Resources\image\batch_list_item_hover.png;.\apps\Resources\image\batch_list_item_normal.png;.\apps\Resources\image\batch_list_item_selected.png;.\apps\Resources\image\onekey_listtiem_query_ck.png;.\apps\Resources\image\onekey_listitem_hover.png;.\apps\Resources\image\onekey_listitem_normal.png;.\apps\Resources\image\onekey_listitem_selected.png;.\apps\Resources\image\onekey_listitem_install_btn_hover.png;.\apps\Resources\image\onekey_listitem_install_btn_normal.png;.\apps\Resources\image\list_item_high_convertion.png;.\apps\Resources\image\list_item_high_download.png;.\apps\Resources\image\onekey_listitem_delete_hover.png;.\apps\Resources\image\onekey_listitem_delete_normal.png;.\apps\Resources\image\query_item_type.png;.\apps\Resources\image\query_item_icon.png;.\apps\Resources\image\task_bg_img.png;.\apps\Resources\image\task_center_close.png;.\apps\Resources\image\task_center_close_hover.png;.\apps\Resources\image\task_line_vline_bk.png;.\apps\Resources\image\task_download.png;.\apps\Resources\image\task_failed.png;.\apps\Resources\image\task_install_movie.gif;.\apps\Resources\image\task_installing.png;.\apps\Resources\image\task_item_icon.png;.\apps\Resources\image\task_item_retry_hover.png;.\apps\Resources\image\task_item_retry_normal.png;.\apps\Resources\image\task_waitting.png;.\apps\Resources\qss\BatchListItem.qss;.\apps\Resources\qss\BatchPage.qss;.\apps\Resources\qss\Mainframe.qss;.\apps\Resources\qss\MoblieItem.qss;.\apps\Resources\qss\OneKeyPage.qss;.\apps\Resources\qss\OneKeyListItem.qss;.\apps\Resources\qss\OneKeyListItemButton_s.qss;.\apps\Resources\qss\QueryItem.qss;.\apps\Resources\qss\TaskCenterWnd.qss;.\apps\Resources\qss\TaskListItem.qss;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\BatchListItem.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <CustomBuild Include="apps\QueryInfoView.h">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing QueryInfoView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing QueryInfoView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="apps\UmInstallerAssistant.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing UmInstallerAssistant.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing UmInstallerAssistant.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\PackageStateManager.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing PackageStateManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing PackageStateManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\UMessageBox.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing UMessageBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing UMessageBox.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\CustomWnd.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CustomWnd.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CustomWnd.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\QucikInstallListWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing QucikInstallListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing QucikInstallListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_CustomItem.h" />
+    <ClInclude Include="GeneratedFiles\ui_CustomPackageWnd.h" />
+    <ClInclude Include="GeneratedFiles\ui_OnekeyAdd.h" />
+    <ClInclude Include="GeneratedFiles\ui_QueryView.h" />
+    <ClInclude Include="GeneratedFiles\ui_QuickInstallItem.h" />
+    <ClInclude Include="GeneratedFiles\ui_QuickInstallPage.h" />
+    <ClInclude Include="GeneratedFiles\ui_UMessageBox.h" />
+    <ClInclude Include="GeneratedFiles\ui_UMessageBoxEx.h" />
+    <ClInclude Include="include\Common.h" />
+    <ClInclude Include="include\configuration.h" />
+    <CustomBuild Include="modules\check_devices\ConnectManager.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ConnectManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ConnectManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <ClInclude Include="modules\package_data_manager\DataManager.h" />
+    <CustomBuild Include="modules\ui_signal\SignalManager.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing SignalManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing SignalManager.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="modules\pushfile_man\PushfileMan.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing PushfileMan.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing PushfileMan.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="modules\local_storage\LocalStorage.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing LocalStorage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing LocalStorage.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="modules\configuration_option\GlobalConfiguration.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing GlobalConfiguration.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing GlobalConfiguration.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="modules\check_devices\CheckDevices.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing CheckDevices.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing CheckDevices.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="modules\adb_man\AdbMan.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing AdbMan.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing AdbMan.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="common_libs\Ipc.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing Ipc.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing Ipc.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="common_libs\EventDriver.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing EventDriver.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing EventDriver.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\TaskWndDialog.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing TaskWndDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing TaskWndDialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\QuickInstallView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing QuickInstallView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing QuickInstallView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\OnekeyPageView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OnekeyPageView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OnekeyPageView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\OneKeyListWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing OneKeyListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing OneKeyListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\MoblieItem.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing MoblieItem.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing MoblieItem.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\ListWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing ListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing ListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\BatchPageView.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing BatchPageView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing BatchPageView.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\BatchListWidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing BatchListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing BatchListWidget.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <CustomBuild Include="apps\BatchListItem.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Moc%27ing BatchListItem.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Moc%27ing BatchListItem.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\GeneratedFiles\$(ConfigurationName)\moc_%(Filename).cpp"  -DUNICODE -DWIN32 -DWIN64 -DQT_DLL -DQT_NO_DEBUG -DNDEBUG -DQT_CORE_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_WEBCHANNEL_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB  "-I$(ProjectDir)\modules" "-I$(ProjectDir)\include" "-I$(ProjectDir)\modules\check_devices" "-I$(ProjectDir)\common_libs" "-I$(ProjectDir)\modules\script_interact" "-I$(ProjectDir)\modules\ui_signal" "-I$(ProjectDir)\modules\package_data_manager" "-I$(ProjectDir)\apps" "-I.\GeneratedFiles" "-I." "-I$(QTDIR)\include" "-I.\GeneratedFiles\$(ConfigurationName)\." "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtSql" "-I$(QTDIR)\include\QtWebChannel" "-I$(QTDIR)\include\QtWidgets" "-I.\modules\zeus" "-I$(QTDIR)\include\QtNetwork" "-I$(QTDIR)\include\QtWebEngineWidgets"</Command>
+    </CustomBuild>
+    <ClInclude Include="GeneratedFiles\ui_BatchListItem.h" />
+    <ClInclude Include="GeneratedFiles\ui_BatchPage.h" />
+    <ClInclude Include="GeneratedFiles\ui_Mainframe.h" />
+    <ClInclude Include="GeneratedFiles\ui_MoblieItem.h" />
+    <ClInclude Include="GeneratedFiles\ui_OneKayPage.h" />
+    <ClInclude Include="GeneratedFiles\ui_OnekeyListItem.h" />
+    <ClInclude Include="GeneratedFiles\ui_QueryItem.h" />
+    <ClInclude Include="GeneratedFiles\ui_TaksListItem.h" />
+    <ClInclude Include="GeneratedFiles\ui_TaskCenterWnd.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\BatchPage.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\Mainframe.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\MoblieItem.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\OneKayPage.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\OnekeyListItem.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\QueryItem.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\TaksListItem.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\TaskCenterWnd.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\QueryView.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\UMessageBox.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\CustomPackageWnd.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\OnekeyAdd.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\QuickInstallItem.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\CustomItem.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\UMessageBoxEx.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="apps\Resources\UI\QuickInstallPage.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UmInstallerAssistant.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="apps\Resources\image\MobileAsst.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties MocDir=".\GeneratedFiles\$(ConfigurationName)" UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOptions="" lupdateOnBuild="0" lreleaseOptions="" Qt5Version_x0020_Win32="msvc2013" MocOptions="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
