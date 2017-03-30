@@ -1,0 +1,68 @@
+QPushButton#batch_install_btton {
+    background-image: url(:/image/batch_install_normal); 
+    border-style: flat;
+    font-family:"Microsoft YaHei UI";
+    color:#ff535353;
+    font-size:14px;
+}
+QPushButton#batch_install_btton:hover{
+    background-image: url(:/image/batch_install_hover); 
+    border-style: flat;
+}
+
+QPushButton#batch_install_btton:pressed{
+    background-image: url(:/image/batch_install_press); 
+    border-style: flat;
+}
+QPushButton#batch_install_btton:disabled{
+    background-image: url(:/image/batch_install_disable); 
+    border-style: flat;
+}
+
+QLabel#label_list_title {
+    color:#FF424242;
+    font-size:16px;
+    font-family:"Microsoft YaHei UI";
+}
+
+QLabel#label_connection_title {
+    color:#424242;
+    font-size:16px;
+    font-family:"Microsoft YaHei UI";
+}
+
+QLabel#label_connection_title2 {
+    color:#FF4592e0;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+}
+
+QLabel#batch_version,QLabel#batch_version_end,QLabel#batch_version_help {
+    color:#8f979a;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+}
+
+QWidget#batch_version_help,QWidget#batch_version_end,QWidget#batch_version {
+   color: #8f979a;
+   font-family:"Microsoft YaHei UI";
+}
+QFrame#batch_vert_line,QFrame#batch_head_line,QFrame#batch_bottom_line {
+    border: 1px inset #FFcbcbcb;
+}
+
+QWidget#batch_head_right,QWidget#batch_head_left {
+   background-color: #ffeff1f6;
+}
+
+QWidget#batch_head_right,QWidget#batch_head_left {
+   background-color: #ffeff1f6;
+}
+
+QPushButton#batch_version_btn {
+    border-style: flat;
+    color:#5baff3;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    background:transparent;
+}

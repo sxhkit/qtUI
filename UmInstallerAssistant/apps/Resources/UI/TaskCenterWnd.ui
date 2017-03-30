@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TaskCenterWndClass</class>
+ <widget class="QDialog" name="TaskCenterWndClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>674</width>
+    <height>644</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TaskCenterWndClass</string>
+  </property>
+  <widget class="QWidget" name="shadowWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>674</width>
+     <height>644</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="centralWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>9</y>
+      <width>650</width>
+      <height>620</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>650</width>
+      <height>620</height>
+     </size>
+    </property>
+    <widget class="QLabel" name="task_title">
+     <property name="geometry">
+      <rect>
+       <x>43</x>
+       <y>12</y>
+       <width>100</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>MingLiU-ExtB</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>任务中心</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="task_close">
+     <property name="geometry">
+      <rect>
+       <x>620</x>
+       <y>12</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QListWidget" name="task_listwidget">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>64</y>
+       <width>648</width>
+       <height>540</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="task_list_title_name">
+     <property name="geometry">
+      <rect>
+       <x>43</x>
+       <y>37</y>
+       <width>134</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>软件名称</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="task_list_title_size">
+     <property name="geometry">
+      <rect>
+       <x>178</x>
+       <y>37</y>
+       <width>97</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>大小</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="task_list_title_progress">
+     <property name="geometry">
+      <rect>
+       <x>276</x>
+       <y>37</y>
+       <width>175</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>进度</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="task_list_title_state">
+     <property name="geometry">
+      <rect>
+       <x>469</x>
+       <y>37</y>
+       <width>81</width>
+       <height>24</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>状态</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="task_list_title_vline_1">
+     <property name="geometry">
+      <rect>
+       <x>177</x>
+       <y>37</y>
+       <width>1</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="task_list_title_vline_2">
+     <property name="geometry">
+      <rect>
+       <x>275</x>
+       <y>37</y>
+       <width>1</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="task_list_title_vline_3">
+     <property name="geometry">
+      <rect>
+       <x>451</x>
+       <y>37</y>
+       <width>1</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="task_no_listitem">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>64</y>
+       <width>648</width>
+       <height>540</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="Line" name="task_head_bottom_line">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>62</y>
+       <width>648</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+    <zorder>task_title</zorder>
+    <zorder>task_close</zorder>
+	<zorder>task_no_listitem</zorder>
+    <zorder>task_listwidget</zorder>
+    <zorder>task_list_title_name</zorder>
+    <zorder>task_list_title_size</zorder>
+    <zorder>task_list_title_progress</zorder>
+    <zorder>task_list_title_state</zorder>
+    <zorder>task_list_title_vline_1</zorder>
+    <zorder>task_list_title_vline_2</zorder>
+    <zorder>task_list_title_vline_3</zorder>
+    <zorder>task_head_bottom_line</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../UmInstallerAssistant.qrc"/>
+ </resources>
+ <connections/>
+</ui>

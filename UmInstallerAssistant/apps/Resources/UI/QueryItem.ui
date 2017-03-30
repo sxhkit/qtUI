@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QueryItemClass</class>
+ <widget class="QWidget" name="QueryItemClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>100</width>
+    <height>98</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>100</width>
+    <height>98</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>100</width>
+    <height>98</height>
+   </size>
+  </property>
+  <widget class="QLabel" name="item_name">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>66</y>
+     <width>100</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>360</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="item_icon">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>0</y>
+     <width>52</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="item_size">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>87</y>
+     <width>100</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>30.9MB</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="item_type">
+   <property name="geometry">
+    <rect>
+     <x>24</x>
+     <y>0</y>
+     <width>17</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../UmInstallerAssistant.qrc"/>
+ </resources>
+ <connections/>
+</ui>

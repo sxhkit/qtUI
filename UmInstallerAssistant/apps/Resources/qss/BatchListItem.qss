@@ -1,0 +1,27 @@
+QRadioButton:indicator {
+    width: 201px; 
+    height: 75px;
+}
+QRadioButton:indicator:unchecked{
+    image: url(:/image/batch_list_item_normal); 
+}
+QRadioButton:indicator:unchecked:hover{
+    image: url(:/image/batch_list_item_hover); 
+}
+QRadioButton:indicator:unchecked:pressed{
+    image: url(:/image/batch_list_item_hover); 
+}
+QRadioButton:indicator:checked{
+    image: url(:/image/batch_list_item_selected); 
+}
+
+QLabel#batch_package_name {
+    font-size:18px;
+}
+
+QLabel#batch_package_size {
+    font-size:12px;
+}
+QLabel#batch_package_type {
+    background:transparent;
+}

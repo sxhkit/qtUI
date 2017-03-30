@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OnekeyListItemUI</class>
+ <widget class="QPushButton" name="OnekeyListItemUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>244</width>
+    <height>167</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>244</width>
+    <height>167</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>244</width>
+    <height>167</height>
+   </size>
+  </property>
+  <widget class="QLabel" name="onekey_listitem_name">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>16</y>
+     <width>180</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Microsoft YaHei UI</family>
+     <pointsize>20</pointsize>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>推荐装机1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="onekey_listitem_size">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>56</y>
+     <width>180</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>共20款软件,共100MB</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="onekey_listitem_install">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>90</y>
+     <width>144</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>一键安装</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="onekey_listitem_query">
+   <property name="geometry">
+    <rect>
+     <x>2</x>
+     <y>140</y>
+     <width>240</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>query</string>
+   </property>
+   <widget class="QLabel" name="onekey_listitem_query_desc">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>240</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="onekey_listitem_delete">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>16</y>
+     <width>17</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="onekey_listitem_modify">
+   <property name="geometry">
+    <rect>
+     <x>203</x>
+     <y>56</y>
+     <width>25</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>编辑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="onekey_listitem_type_desc">
+   <property name="geometry">
+    <rect>
+     <x>178</x>
+     <y>56</y>
+     <width>50</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>不可编辑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="onekey_listitem_type">
+   <property name="geometry">
+    <rect>
+     <x>196</x>
+     <y>0</y>
+     <width>49</width>
+     <height>48</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="onekey_listitem_unique">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>120</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="onekey_listitem_mask">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>244</width>
+     <height>167</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <widget class="QPushButton" name="onekey_listitem_mask_close">
+    <property name="geometry">
+     <rect>
+      <x>219</x>
+      <y>3</y>
+      <width>22</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="onekey_listitem_mask_text">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>79</y>
+      <width>244</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../UmInstallerAssistant.qrc"/>
+ </resources>
+ <connections/>
+</ui>

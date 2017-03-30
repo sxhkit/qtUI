@@ -1,0 +1,112 @@
+QWidget#shadowWidget {
+    image: url(:/image/messagebox_bkimg); 
+    background:transparent
+}
+
+
+QLabel#messagebox_label {
+    color:#333333;
+    font-size:14px;
+}
+
+QLabel#messagebox_title {
+    border-style: flat;
+    color:#ffffff;
+    font-size:14px;
+}
+
+QPushButton#messagebox_confirm:pressed {
+    image:url(:/image/messagebox_btn_press);
+    color:#ffffff;
+    font-size:14px;
+    border-style: flat;
+}
+
+QPushButton#messagebox_confirm:hover {
+    image:url(:/image/messagebox_btn_press);
+    color:#ffffff;
+    font-size:14px;
+    border-style: flat;
+}
+
+QPushButton#messagebox_confirm {
+    image:url(:/image/messagebox_btn_normal);
+    color:#007dff;
+    font-size:14px;
+    border-style: flat;
+}
+
+QPushButton#messagebox_cancel:pressed {
+    image:url(:/image/messagebox_btn_hover);
+    color:#333333;
+    font-size:14px;
+    border-style: flat;
+}
+
+QPushButton#messagebox_cancel:hover {
+    image:url(:/image/messagebox_btn_hover);
+    color:#333333;
+    font-size:14px;
+    border-style: flat;
+
+}
+
+QPushButton#messagebox_cancel {
+    image:url(:/image/messagebox_btn_normal);
+    color:#333333;
+    font-size:14px;
+    border-style: flat;
+}
+
+
+QPushButton#messagebox_close {
+    background-image:url(:/image/messagebox_close);
+        border-style: flat;
+}
+
+QPushButton#messagebox_close:hover {
+    background-image:url(:/image/messagebox_close);
+        border-style: flat;
+}
+
+QPushButton#messagebox_close:pressed {
+    background-image:url(:/image/messagebox_close);
+        border-style: flat;
+}
+
+QCheckBox#messagebox_ck{
+    color:#333333;
+    font-size:12px;
+    border-style: flat;
+    font-family:"Microsoft YaHei UI";
+}
+
+QCheckBox#messagebox_ck:indicator:unchecked{
+    image: url(:/image/checkbox_normal); 
+    color:#333333;
+    font-size:12px;
+    border-style: flat;
+    font-family:"Microsoft YaHei UI";
+}
+QCheckBox#messagebox_ck:indicator:unchecked:hover{
+    image: url(:/image/checkbox_normal); 
+    color:#333333;
+    font-size:12px;
+    border-style: flat;
+    font-family:"Microsoft YaHei UI";
+}
+QCheckBox#messagebox_ck:indicator:unchecked:pressed{
+    image: url(:/image/checkbox_normal); 
+    color:#333333;
+    font-size:12px;
+    border-style: flat;
+    font-family:"Microsoft YaHei UI";
+}
+
+QCheckBox#messagebox_ck:indicator:checked{
+    image: url(:/image/checkbox_checked); 
+    color:#333333;
+    font-size:12px;
+    border-style: flat;
+    font-family:"Microsoft YaHei UI";
+}

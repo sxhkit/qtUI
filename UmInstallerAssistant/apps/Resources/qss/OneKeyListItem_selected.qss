@@ -1,0 +1,143 @@
+QCheckBox:indicator {
+    width: 240px; 
+    height: 27px;
+}
+QCheckBox:indicator:unchecked{
+    image: url(:/image/onekey_listitem_ck); 
+}
+QCheckBox:indicator:unchecked:hover{
+    image: url(:/image/onekey_listitem_ck); 
+}
+QCheckBox:indicator:unchecked:pressed{
+    image: url(:/image/onekey_listitem_ck); 
+}
+QCheckBox:indicator:checked{
+    image: url(:/image/onekey_listitem_ck); 
+}
+
+QLabel#onekey_listitem_name {
+    font-size:20px;
+    font-family:"Î¢ÈíÑÅºÚ";
+    color:#ff747477;
+    background:transparent
+}
+
+QLabel#onekey_listitem_type_desc {
+    background:transparent
+}
+
+QLabel#onekey_listitem_type {
+    background:transparent
+}
+
+QLabel#onekey_listitem_query_desc {
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff6ea9eb;
+    background:transparent;
+}
+
+QLabel#onekey_listitem_size {
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#fffebd72;
+    background:transparent;
+}
+
+QPushButton#onekey_listitem_modify {
+    border-style: flat;
+    color:#ff0d74b7;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    background:transparent;
+}
+
+QPushButton#onekey_listitem_modify:hover {
+    border-style: flat;
+    color:#ffb4d3f8;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    background:transparent;
+}
+
+QPushButton#onekey_listitem_install {
+    image: url(:/image/onekey_listitem_btn_normal); 
+    border-style: flat;
+    color:#ffffffff;
+    font-size:16px;
+    font-family:"Microsoft YaHei UI";
+    
+}
+
+QPushButton#onekey_listitem_install:hover {
+    image: url(:/image/onekey_listitem_btn_hover); 
+    border-style: flat;
+    color:#ffffff;
+    font-size:16px;
+    font-family:"Microsoft YaHei UI";
+}
+
+QPushButton#onekey_listitem_install:pressed {
+    image: url(:/image/onekey_listitem_btn_hover); 
+    border-style: flat;
+    color:#ffffff;
+    font-size:16px;
+    font-family:"Microsoft YaHei UI";
+}
+
+QPushButton#OnekeyListItemUI:hover {
+    image: url(:/image/onekey_listitem_selected); 
+    
+}
+QPushButton#OnekeyListItemUI:pressed {
+    image: url(:/image/onekey_listitem_selected); 
+}
+QPushButton#OnekeyListItemUI {
+    image: url(:/image/onekey_listitem_selected); 
+}
+
+QPushButton#onekey_listitem_delete {
+    image: url(:/image/onekey_listitem_delete_normal); 
+     background:transparent;
+}
+
+QPushButton#onekey_listitem_delete:hover {
+    image: url(:/image/onekey_listitem_delete_hover);
+     background:transparent;
+}
+
+QPushButton#onekey_listitem_delete:pressed {
+    image: url(:/image/onekey_listitem_delete_hover); 
+    background:transparent;
+}
+
+QLabel#onekey_listitem_type_desc {
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff999999;
+    background:transparent;
+}
+
+QLabel#onekey_listitem_mask_text {
+    font-size:18px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffffffff;
+    background:transparent;
+}
+
+QLabel#onekey_listitem_mask {
+    image: url(:/image/onekey_listitem_mask);
+    background:transparent;
+}
+
+QPushButton#onekey_listitem_mask_close {
+    border-style: flat;
+    image: url(:/image/onekey_listitem_mask_close_normal);
+    background:transparent;
+}
+
+QPushButton#onekey_listitem_mask_close:hover {
+    border-style: flat;
+    image: url(:/image/onekey_listitem_mask_close_hover);
+    background:transparent;
+}

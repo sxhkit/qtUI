@@ -1,0 +1,157 @@
+
+QLabel#customwnd_title_1 {
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff333333;
+    background:transparent;
+}
+
+QWidget#shadowWidget {
+    image: url(:/image/customwnd_bk); 
+    background:transparent
+}
+
+QPushButton#customwnd_close{
+    background-image: url(:/image/taskwnd_close_normal); 
+    width: 12px; 
+    height: 12px;
+    border-style: flat;
+}
+QPushButton#customwnd_close:hover{
+    background-image: url(:/image/taskwnd_close_hover); 
+    width: 12px; 
+    height: 12px;
+    border-style: flat;
+}
+
+QPushButton#customwnd_close:pressed{
+    background-image: url(:/image/taskwnd_close_hover); 
+    width: 12px; 
+    height: 12px;
+    border-style: flat;
+}
+
+QLabel#custom_label_1,QLabel#custom_label_3{
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff000000;
+    background:transparent
+}
+
+QLabel#custom_label_2,QLabel#custom_label_4{
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffff4242;
+    background:transparent
+}
+
+QPushButton#custom_save_btn{
+    background-image: url(:/image/customwnd_save_normal); 
+    width: 91px; 
+    height: 32px;
+    border-style: flat;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffffffff;
+}
+QPushButton#custom_save_btn:hover{
+    background-image: url(:/image/customwnd_save_hover); 
+    width: 91px; 
+    height: 32px;
+    border-style: flat;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffffffff;
+}
+
+QPushButton#custom_save_btn:pressed{
+    background-image: url(:/image/customwnd_save_hover); 
+    width: 91px; 
+    height: 32px;
+    border-style: flat;
+     font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffffffff;
+}
+
+QPushButton#custom_save_btn:disabled{
+    background-image: url(:/image/customwnd_save_disable); 
+    width: 91px; 
+    height: 32px;
+    border-style: flat;
+     font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffffffff;
+}
+
+QWidget#customwnd_bottom {
+   background-color: #FFf6f6f8;
+}
+
+QFrame#custom_bottom_line {
+    border: 1px inset #FFe1e1e2;
+}
+
+
+QCheckBox:indicator {
+    width: 15px; 
+    height: 15px;
+}
+QCheckBox:indicator:unchecked{
+    image: url(:/image/checkbox_normal);
+}
+QCheckBox:indicator:unchecked:hover{
+    image: url(:/image/checkbox_normal);
+}
+QCheckBox:indicator:unchecked:pressed{
+    image: url(:/image/checkbox_checked);
+}
+QCheckBox:indicator:checked{
+    image:url(:/image/checkbox_checked);
+    border-style: flat;;
+}
+
+QLabel#customwnd_label_1,QLabel#customwnd_label_2 {
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff333333;
+    background:transparent;
+}
+
+QWidget#customwnd_noNet{
+    background-color:#ffffffff;
+}
+QLabel#no_net_img {
+    image:url(:/image/no_net);
+}
+
+QLabel#no_net_text {
+    font-size:20px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff333333;
+}
+
+ QLineEdit {
+    background-color: #ffffffff;
+    selection-color: #0a214c; 
+    selection-background-color: #C19A6B;
+}
+/* We reserve 1 pixel space in padding. When we get the focus,
+   we kill the padding and enlarge the border. This makes the items
+   glow. */
+QLineEdit {
+    border-width: 1px;
+    padding-left: 10px;
+    color:#ff999999;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    border-style: solid;
+    border-color: #ffebd9da;
+}
+
+/* As mentioned above, eliminate the padding and increase the border. */
+QLineEdit:focus {
+    padding-left: 10px;
+    border-width: 1px;
+}
+

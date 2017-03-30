@@ -1,0 +1,5 @@
+
+QFrame#onekey_bottom_line {
+    border: 1px inset #FFcbcbcb;
+}
+

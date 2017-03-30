@@ -1,0 +1,19 @@
+QPushButton#OnekeyListAddUI:hover {
+    image: url(:/image/onekey_add_hover);
+}
+
+QPushButton#OnekeyListAddUI:pressed {
+    image: url(:/image/onekey_add_hover); 
+}
+
+QPushButton#OnekeyListAddUI {
+    image: url(:/image/onekey_add_normal); 
+}
+
+QLabel#onekey_label_1,QLabel#onekey_label_2 {
+    font-size:16px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff8d93ae;
+    background:transparent;
+}
+

@@ -1,0 +1,78 @@
+QWidget#shadowWidget {
+    image: url(:/image/messageboxex_bkimg); 
+    background:transparent
+}
+
+
+QLabel#messagebox_label_1,QLabel#messagebox_label_2 {
+    color:#333333;
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+}
+
+QLabel#messagebox_title {
+    border-style: flat;
+    color:#ffffff;
+    font-size:14px;
+}
+
+QPushButton#messagebox_cancel:pressed {
+    image:url(:/image/msg_hover);
+    color:#ffffff;
+    font-size:14px;
+    border-style: flat;
+    font-family:"Microsoft YaHei UI";
+}
+
+QPushButton#messagebox_cancel:hover {
+    image:url(:/image/msg_hover);
+    color:#ffffff;
+    font-size:14px;
+    border-style: flat;
+    font-family:"Microsoft YaHei UI";
+}
+
+QPushButton#messagebox_cancel {
+    image:url(:/image/msg_normal);
+    color:#ffffff;
+    font-size:14px;
+    border-style: flat;
+    font-family:"Microsoft YaHei UI";
+}
+
+QPushButton#continue_save:pressed {
+    border-style: flat;
+    color:#FF666666;
+    font-size:12px;
+    text-decoration:underline;
+}
+
+QPushButton#continue_save:hover {
+    border-style: flat;
+    color:#FF666666;
+    font-size:12px;
+    text-decoration:underline;
+}
+
+QPushButton#continue_save {
+    border-style: flat;
+    color:#FFadadad;
+    font-size:12px;
+    text-decoration:underline;
+}
+
+
+QPushButton#messagebox_close {
+    background-image:url(:/image/messagebox_close);
+        border-style: flat;
+}
+
+QPushButton#messagebox_close:hover {
+    background-image:url(:/image/messagebox_close);
+        border-style: flat;
+}
+
+QPushButton#messagebox_close:pressed {
+    background-image:url(:/image/messagebox_close);
+        border-style: flat;
+}

@@ -1,0 +1,254 @@
+
+QWidget#shadowWidget{
+    background-image:url(:/image/shadowimage); 
+}
+
+QRadioButton#tab_btn_1,QRadioButton#tab_btn_2,QRadioButton#tab_btn_3:indicator {
+    width: 189px; 
+    height: 41px;
+}
+
+QRadioButton#tab_btn_2:indicator:unchecked{
+    image: url(:/image/batch_btn_normal); 
+}
+QRadioButton#tab_btn_2:indicator:unchecked:hover{
+    image: url(:/image/batch_btn_hover); 
+}
+QRadioButton#tab_btn_2:indicator:unchecked:pressed{
+    image: url(:/image/batch_btn_hover); 
+}
+
+QRadioButton#tab_btn_2:indicator:checked{
+    image: url(:/image/batch_btn_selected); 
+}
+
+QRadioButton#tab_btn_1:indicator:unchecked{
+    image: url(:/image/onekey_btn_normal); 
+}
+QRadioButton#tab_btn_1:indicator:unchecked:hover{
+    image: url(:/image/onekey_btn_hover); 
+}
+QRadioButton#tab_btn_1:indicator:unchecked:pressed{
+    image: url(:/image/onekey_btn_hover); 
+}
+
+QRadioButton#tab_btn_1:indicator:checked{
+    image: url(:/image/onekey_btn_selected); 
+}
+
+QRadioButton#tab_btn_3:indicator:unchecked{
+    image: url(:/image/quick_btn_normal); 
+}
+QRadioButton#tab_btn_3:indicator:unchecked:hover{
+    image: url(:/image/quick_btn_hover); 
+}
+QRadioButton#tab_btn_3:indicator:unchecked:pressed{
+    image: url(:/image/quick_btn_hover); 
+}
+
+QRadioButton#tab_btn_3:indicator:checked{
+    image: url(:/image/quick_btn_selected); 
+}
+
+QWidget#maimframe_caption {
+     left:1px;
+     right:1px;
+     background-image: url(:/image/caption_bkimage);
+}
+
+QLabel#label_caption_icon {
+     background-image: url(:/image/mainframe_caption_icon);
+}
+
+
+QWidget#left_layout {
+    width: 189px; 
+    height: 625px;
+}
+
+QPushButton#main_frame_close{
+    background-image: url(:/image/main_frame_close_normal); 
+    width: 14px; 
+    height: 14px;
+    border-style: flat;
+}
+QPushButton#main_frame_close:hover{
+    background-image: url(:/image/main_frame_close_hover); 
+    width: 14px; 
+    height: 14px;
+    border-style: flat;
+}
+
+QPushButton#main_frame_close:pressed{
+    background-image: url(:/image/main_frame_close_press); 
+    width: 14px; 
+    height: 14px;
+    border-style: flat;
+}
+
+
+QPushButton#main_frame_min {
+    background-image: url(:/image/main_frame_min_normal); 
+    width: 14px; 
+    height: 14px;
+    border-style: flat;
+}
+QPushButton#main_frame_min:hover{
+    background-image: url(:/image/main_frame_min_hover); 
+    width: 14px; 
+    height: 14px;
+    border-style: flat;
+}
+
+QPushButton#main_frame_min:pressed{
+    background-image: url(:/image/main_frame_min_press); 
+    width: 14px; 
+    height: 14px;
+    border-style: flat;
+}
+
+QLabel#label_welcome {
+     background-color:#ffd5e8ff;
+}
+
+QLabel#label_caption_icon {
+     background-image:mainframe_help_icon
+}
+
+QLabel#label_mainframe_help_icon {
+     background-image:url(:/image/mainframe_help_icon);
+}
+
+QLine#mainframe_gap_line {
+     background-image:url(:/image/mainframe_help_gap_line);
+}
+
+QPushButton#mainframe_link {
+    border-style: flat;
+    color:#FFFFFFFF;
+    font-size:12px;
+}
+
+QPushButton#mainframe_taskcenter_btn {
+    padding-left:23px;
+    background-image: url(:/image/mainframe_task_center_btn); 
+    border-style: flat;
+    color:#ff0081ff;
+    font-size:14px;
+}
+
+QPushButton#mainframe_taskcenter_btn:hover{
+    padding-left:23px;
+    background-image: url(:/image/mainframe_task_center_btn_hover); 
+    border-style: flat;
+    color:#ff0081ff;
+    font-size:14px;
+}
+QPushButton#mainframe_taskcenter_btn:pressed{
+    padding-left:23px;
+    background-image: url(:/image/mainframe_task_center_btn_hover); 
+    border-style: flat;
+    color:#ff0081ff;
+    font-size:14px;
+}
+
+QFrame#left_layout_vert_line {
+    border: 1px inset #FFE4E1E1;
+}
+
+QFrame#mainframe_gap_line {
+    border: 1px inset #FF1c76d1;
+}
+
+QLabel#main_frame_user,QLabel#main_frame_hello {
+    font-family:"Microsoft YaHei UI";
+    color:#ffffffff;
+    font-size:12px;
+}
+QLabel#single_state {
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    background:transparent;
+}
+QLabel#single_tip {
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    background:transparent;
+    color:#999999
+}
+
+QLabel#mainframe_mobile_memory,QLabel#mainframe_mobile_memory_left,QLabel#mainframe_sd_left, QLabel#mainframe_sd_total{
+   color: #ffafafaf;
+   font-size:12px;
+   font-family:"Microsoft YaHei UI";
+}
+
+QProgressBar#mainframe_bottom_memory_progress {
+	 background-color:#e9e9e9; 
+}
+
+
+QProgressBar#mainframe_bottom_memory_progress::chunk{
+   background-color:#ff36aafd ;
+}
+
+QProgressBar#mainframe_bottom_sd_progress {
+	 background-color:#e9e9e9; 
+}
+
+
+QProgressBar#mainframe_bottom_sd_progress::chunk{
+   background-color:#ff28d190 ;
+}
+
+QLabel#mainframe_version,QLabel#mainframe_version_end,QLabel#mainframe_version_help {
+    color:#8f979a;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+}
+
+QPushButton#mainframe_version_btn {
+    border-style: flat;
+    color:#5baff3;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    background:transparent;
+}
+
+QLabel#mainframe_bottom_mobile_icon {
+    image: url(:/image/onekey_mobile_icon); 
+    background:transparent;
+}
+
+QLabel#mainframe_bottom_sd_icon {
+    image: url(:/image/onekey_sd_icon); 
+    background:transparent;
+}
+
+
+QFrame#mainframe_bottom_line {
+    border: 1px inset #FFcbcbcb;
+}
+
+
+QComboBox#mainframe_sd_combox {
+    border: 1px solid #8f979a;
+    padding: 1px 2px 1px 2px;
+    color:#5baff3;
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    background-color: cornsilk;
+    selection-color: #0a214c; 
+    selection-background-color: #C19A6B;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 14px;
+    background:transparent;
+}
+
+QComboBox::down-arrow {
+    image: url(:/image/combobox_arrow);
+}

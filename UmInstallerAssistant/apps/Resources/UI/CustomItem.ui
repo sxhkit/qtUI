@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomItemClass</class>
+ <widget class="QCheckBox" name="CustomItemClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>94</width>
+    <height>96</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>94</width>
+    <height>96</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>94</width>
+    <height>96</height>
+   </size>
+  </property>
+  <widget class="QLabel" name="custom_item_name">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>64</y>
+     <width>70</width>
+     <height>14</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>高德地图</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="custom_item_icon">
+   <property name="geometry">
+    <rect>
+     <x>28</x>
+     <y>10</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="custom_item_type">
+   <property name="geometry">
+    <rect>
+     <x>1</x>
+     <y>1</y>
+     <width>17</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="custom_check_icon">
+   <property name="geometry">
+    <rect>
+     <x>58</x>
+     <y>33</y>
+     <width>24</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../UmInstallerAssistant.qrc"/>
+ </resources>
+ <connections/>
+</ui>

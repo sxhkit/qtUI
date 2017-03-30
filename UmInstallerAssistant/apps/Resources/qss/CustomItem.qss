@@ -1,0 +1,35 @@
+QCheckBox#CustomItemClass:indicator {
+    width: 94px; 
+    height: 96px;
+}
+QCheckBox#CustomItemClass:indicator:unchecked{
+    image: url(:/image/custom_item_normal); 
+}
+QCheckBox#CustomItemClass:indicator:unchecked:hover{
+    image: url(:/image/custom_item_hover); 
+}
+QCheckBox#CustomItemClass:indicator:unchecked:pressed{
+    image: url(:/image/custom_item_normal); 
+}
+QCheckBox#CustomItemClass:indicator:checked{
+    image: url(:/image/custom_item_normal); 
+}
+
+QCheckBox#CustomItemClass:indicator:checked:hover{
+    image: url(:/image/custom_item_hover); 
+}
+
+QLabel#custom_check_icon{
+    background:transparent;
+}
+QLabel#custom_item_type {
+    image: url(:/image/query_item_type);
+    background:transparent;
+}
+
+QLabel#custom_item_name {
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff333333;
+    background:transparent;
+}

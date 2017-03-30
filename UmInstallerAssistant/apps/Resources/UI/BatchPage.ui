@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BatchPageUIClass</class>
+ <widget class="QWidget" name="BatchPageUIClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>801</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Microsoft YaHei UI</family>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>291</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="connectLayout">
+    <property name="spacing">
+     <number>12</number>
+    </property>
+    <property name="sizeConstraint">
+     <enum>QLayout::SetNoConstraint</enum>
+    </property>
+   </layout>
+  </widget>
+  <widget class="Line" name="batch_head_line">
+   <property name="geometry">
+    <rect>
+     <x>335</x>
+     <y>0</y>
+     <width>1</width>
+     <height>580</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="batch_bottom" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>579</y>
+     <width>801</width>
+     <height>46</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>10</y>
+      <width>401</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="batch_bottom_horzlayout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetNoConstraint</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="batch_version">
+       <property name="text">
+        <string>版本v 1.00.00.00 (</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="batch_version_btn">
+       <property name="text">
+        <string>可更新</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="batch_version_help">
+       <property name="minimumSize">
+        <size>
+         <width>72</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>72</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>已是最新版本</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="batch_version_end">
+       <property name="minimumSize">
+        <size>
+         <width>6</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>6</width>
+         <height>12</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>)</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="batch_install_btton">
+   <property name="geometry">
+    <rect>
+     <x>666</x>
+     <y>524</y>
+     <width>114</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>开始安装</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="batch_head_left" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>334</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_connection_title">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>10</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>请连接手机</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::RichText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_connection_title2">
+    <property name="geometry">
+     <rect>
+      <x>95</x>
+      <y>12</y>
+      <width>191</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>(最多可同时连接五台安装):</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="batch_vert_line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>802</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="batch_head_right" native="true">
+   <property name="geometry">
+    <rect>
+     <x>336</x>
+     <y>0</y>
+     <width>466</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_list_title">
+    <property name="geometry">
+     <rect>
+      <x>14</x>
+      <y>10</y>
+      <width>181</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>微软雅黑</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>选择安装套餐包：</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="batch_bottom_line">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>578</y>
+     <width>802</width>
+     <height>1</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../UmInstallerAssistant.qrc"/>
+ </resources>
+ <connections/>
+</ui>

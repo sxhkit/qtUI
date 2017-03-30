@@ -1,0 +1,67 @@
+QLabel#task_title {
+    font-size:14px;
+    font-family:"Microsoft YaHei UI Light";
+    color:#333333;
+    font-weight: bold;
+    background:transparent;
+    
+}
+
+QPushButton#task_close{
+    background-image: url(:/image/taskwnd_close_normal); 
+    width: 12px; 
+    height: 12px;
+    border-style: flat;
+}
+QPushButton#task_close:hover{
+    background-image: url(:/image/taskwnd_close_hover); 
+    width: 12px; 
+    height: 12px;
+    border-style: flat;
+}
+
+QPushButton#task_close:pressed{
+    background-image: url(:/image/taskwnd_close_hover); 
+    width: 12px; 
+    height: 12px;
+    border-style: flat;
+}
+
+QWidget#shadowWidget {
+    image: url(:/image/task_center_bkimage); 
+    background:transparent
+}
+
+QListWidget#task_listwidget {
+    border:none;
+    background:transparent
+}
+
+QLabel#task_list_title_name,QLabel#task_list_title_progress,QLabel#task_list_title_size,QLabel#task_list_title_state {
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffbababa;
+    background:transparent;
+    
+}
+
+QLabel#task_list_title_vline_1,QLabel#task_list_title_vline_2,QLabel#task_list_title_vline_3 {
+     background-image: url(:/image/taskwnd_list_title_vline); 
+}
+
+
+
+QListWidget#task_listwidget::item:hover {    
+     background-color: #ffd8ecfb;
+}  
+
+QFrame#task_head_bottom_line {
+    border: 1px inset #eeeeee;
+}
+
+
+
+QListWidget#task_listwidget {
+     background:transparent;
+}
+

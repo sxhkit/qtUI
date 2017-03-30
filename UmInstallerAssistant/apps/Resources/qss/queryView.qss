@@ -1,0 +1,15 @@
+
+QLabel#query_view_drop_down {
+    image: url(:/image/queryView.png); 
+    background:transparent
+}
+
+QWidget#query_view_back{
+    background-color:#edf6ff;
+    border:1px solid #b5d9ff;
+}
+
+QWidget#gridLayoutWidget{
+    background:transparent
+}
+

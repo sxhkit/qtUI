@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CustomPackageWndClass</class>
+ <widget class="QDialog" name="CustomPackageWndClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>924</width>
+    <height>611</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CustomPackageWndClass</string>
+  </property>
+  <widget class="QWidget" name="shadowWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>924</width>
+     <height>611</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="centralWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>12</x>
+      <y>9</y>
+      <width>900</width>
+      <height>587</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>900</width>
+      <height>587</height>
+     </size>
+    </property>
+    <widget class="QLabel" name="customwnd_title_1">
+     <property name="geometry">
+      <rect>
+       <x>32</x>
+       <y>13</y>
+       <width>100</width>
+       <height>14</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Microsoft YaHei UI</family>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>自定义套餐  </string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="customwnd_close">
+     <property name="geometry">
+      <rect>
+       <x>876</x>
+       <y>13</y>
+       <width>12</width>
+       <height>12</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="customwnd_selecteall">
+     <property name="geometry">
+      <rect>
+       <x>677</x>
+       <y>11</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QCheckBox" name="customwnd_selectepart">
+     <property name="geometry">
+      <rect>
+       <x>737</x>
+       <y>11</y>
+       <width>15</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="customwnd_label_1">
+     <property name="geometry">
+      <rect>
+       <x>697</x>
+       <y>11</y>
+       <width>30</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>全选</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="customwnd_label_2">
+     <property name="geometry">
+      <rect>
+       <x>759</x>
+       <y>11</y>
+       <width>100</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>所有可赚钱软件</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="customwnd_bottom" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>536</y>
+       <width>898</width>
+       <height>50</height>
+      </rect>
+     </property>
+     <widget class="QLineEdit" name="custom_edit">
+      <property name="geometry">
+       <rect>
+        <x>626</x>
+        <y>9</y>
+        <width>150</width>
+        <height>33</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="custom_save_btn">
+      <property name="geometry">
+       <rect>
+        <x>786</x>
+        <y>9</y>
+        <width>91</width>
+        <height>32</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string> 保存</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="horizontalLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>18</y>
+        <width>500</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QLabel" name="custom_label_1">
+         <property name="text">
+          <string>共选</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="custom_label_2">
+         <property name="text">
+          <string>0款</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="custom_label_3">
+         <property name="text">
+          <string>软件,共0MB,可赚钱软件0款,最多可赚</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="custom_label_4">
+         <property name="text">
+          <string>0元</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="Line" name="custom_bottom_line">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>898</width>
+        <height>1</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="customwnd_noNet" native="true">
+     <property name="geometry">
+      <rect>
+       <x>1</x>
+       <y>37</y>
+       <width>898</width>
+       <height>549</height>
+      </rect>
+     </property>
+     <property name="text" stdset="0">
+      <string/>
+     </property>
+     <widget class="QLabel" name="no_net_img">
+      <property name="geometry">
+       <rect>
+        <x>365</x>
+        <y>150</y>
+        <width>167</width>
+        <height>209</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="no_net_text">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>400</y>
+        <width>297</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>无网络连接，请联网重试</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../UmInstallerAssistant.qrc"/>
+ </resources>
+ <connections/>
+</ui>

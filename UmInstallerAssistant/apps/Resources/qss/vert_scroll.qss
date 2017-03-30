@@ -1,0 +1,9 @@
+QScrollBar {
+    background:transparent; 
+    width:10px; 
+}
+QScrollBar::handle{background:lightgray; border:2px solid transparent; border-radius:5px; }
+/*QScrollBar::handle:hover{background:gray; }
+QScrollBar::handle:pressed{background:black;}*/
+QScrollBar::sub-line{background:transparent;}
+QScrollBar::add-line{background:transparent;}

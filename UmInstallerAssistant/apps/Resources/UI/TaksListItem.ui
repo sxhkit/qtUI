@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TaskListItemClass</class>
+ <widget class="QWidget" name="TaskListItemClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>648</width>
+    <height>60</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>648</width>
+    <height>60</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>648</width>
+    <height>60</height>
+   </size>
+  </property>
+  <widget class="QLabel" name="TaskItem_Icon">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>11</y>
+     <width>38</width>
+     <height>38</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TaskItem_Name">
+   <property name="geometry">
+    <rect>
+     <x>69</x>
+     <y>0</y>
+     <width>90</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>百度手机管家</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TaskItem_Size">
+   <property name="geometry">
+    <rect>
+     <x>177</x>
+     <y>0</y>
+     <width>97</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>size</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TaskItem_State_icon">
+   <property name="geometry">
+    <rect>
+     <x>468</x>
+     <y>22</y>
+     <width>16</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TaskItem_TryBtn">
+   <property name="geometry">
+    <rect>
+     <x>553</x>
+     <y>16</y>
+     <width>58</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QProgressBar" name="TaskItem_Progress">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>25</y>
+     <width>111</width>
+     <height>10</height>
+    </rect>
+   </property>
+   <property name="value">
+    <number>0</number>
+   </property>
+   <property name="textVisible">
+    <bool>false</bool>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+   <property name="textDirection">
+    <enum>QProgressBar::TopToBottom</enum>
+   </property>
+   <widget class="QLabel" name="TaskItem_Gif">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>111</width>
+      <height>10</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="TaskItem_value">
+   <property name="geometry">
+    <rect>
+     <x>411</x>
+     <y>0</y>
+     <width>41</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>24%</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TaskItem_Error">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>35</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>error</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="TaskItem_State_text">
+   <property name="geometry">
+    <rect>
+     <x>491</x>
+     <y>22</y>
+     <width>56</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../UmInstallerAssistant.qrc"/>
+ </resources>
+ <connections/>
+</ui>

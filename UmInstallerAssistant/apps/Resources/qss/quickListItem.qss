@@ -1,0 +1,38 @@
+
+QPushButton#QuickInstallItemClass:hover {
+    image: url(:/image/quickitem_hover); 
+    background:transparent;
+    
+}
+QPushButton#QuickInstallItemClass:pressed {
+    image: url(:/image/quickitem_hover); 
+    background:transparent;
+}
+QPushButton#QuickInstallItemClass {
+    image: url(:/image/quickitem_normal); 
+    background:transparent;
+}
+
+QLabel#quick_detail {
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff999999;
+    background:transparent;
+}
+
+QLabel#quick_name {
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff666666;
+    background:transparent;
+}
+
+
+QLabel#quick_rec {
+     image: url(:/image/query_item_type); 
+     background:transparent;
+}
+
+QLabel#quick_icon {
+     background:transparent;
+}

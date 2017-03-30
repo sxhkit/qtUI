@@ -1,0 +1,70 @@
+QLabel#TaskItem_Name {
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff333333;
+    background:transparent;
+    
+}
+
+QLabel#TaskItem_Size {
+    font-size:14px;
+    font-family:"Arial";
+    color:#ff646464;
+    background:transparent;
+    
+}
+
+QLabel#TaskItem_value {
+    font-size:14px;
+    font-family:"Arial";
+    color:#ff0D5BB1;
+    background:transparent;
+    
+}
+
+QLabel#TaskItem_State_text{
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff0D5BB1;
+    background:transparent;
+}
+
+QLabel#TaskItem_Error{
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffff1438;
+    background:transparent;
+}
+
+QPushButton#TaskItem_TryBtn {
+    background-image: url(:/image/task_item_retry_normal); 
+    border-style: flat;
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff1d6bec;
+}
+QPushButton#TaskItem_TryBtn:hover{
+    background-image: url(:/image/task_item_retry_hover); 
+    border-style: flat;
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffffffff;
+}
+
+QPushButton#TaskItem_TryBtn:pressed{
+    background-image: url(:/image/task_item_retry_hover); 
+    border-style: flat;
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ffffffff;
+}
+
+QProgressBar#TaskItem_Progress {
+	 background-color:#ffffffff; 
+     border:1px solid #ff559ae5;
+}
+
+
+QProgressBar#TaskItem_Progress::chunk{
+   background-color:#ff589aeb ;
+}

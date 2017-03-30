@@ -1,0 +1,23 @@
+
+QLabel#item_size {
+    font-size:12px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff666666;
+    background:transparent
+}
+
+QLabel#item_name {
+    font-size:14px;
+    font-family:"Microsoft YaHei UI";
+    color:#ff333333;
+    background:transparent;
+    
+}
+QLabel#item_type {
+    image: url(:/image/query_item_type); 
+    background:transparent
+}
+
+QWidget{
+    background:transparent
+}

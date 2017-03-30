@@ -1,0 +1,23 @@
+QWidget#ConnectItem
+{ 
+     border:1px solid #FF002857;
+}
+
+QLabel#IconImage
+{  
+    image: url(:/image/unconnected);  
+}
+QLabel#mobile_name {
+    font-size:16px;
+}
+QLabel#installed_count,QLabel#install_state {
+    font-size:12px;
+}
+QProgressBar#progressBar {
+     background:transparent;
+}
+
+QProgressBar#progressBar::chunk{
+   background-color:#433cc24c;
+   border:solid #ff3cc24c;
+}

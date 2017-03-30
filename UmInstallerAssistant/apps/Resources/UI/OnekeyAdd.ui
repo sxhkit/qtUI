@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>OnekeyListAddUI</class>
+ <widget class="QPushButton" name="OnekeyListAddUI">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>244</width>
+    <height>167</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>244</width>
+    <height>167</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>244</width>
+    <height>167</height>
+   </size>
+  </property>
+  <widget class="QLabel" name="onekey_label_1">
+   <property name="geometry">
+    <rect>
+     <x>63</x>
+     <y>92</y>
+     <width>115</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>新增自定义套餐</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="onekey_label_2">
+   <property name="geometry">
+    <rect>
+     <x>63</x>
+     <y>120</y>
+     <width>115</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>(最多7个哦)</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../../UmInstallerAssistant.qrc"/>
+ </resources>
+ <connections/>
+</ui>
